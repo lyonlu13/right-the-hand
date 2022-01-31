@@ -1,0 +1,132 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@300;500&display=swap');
+@import url('./css/loading.css');
+
+
+.primary {
+    --color: #00aaff
+}
+
+.secondary {
+    --color: #ff0088
+}
+
+html {
+    overflow-x: hidden;
+}
+
+body {
+    padding: 0;
+    margin: 0;
+}
+
+.main {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    transform: translateX(100%);
+    transition: 0.5s;
+    opacity: 0.2;
+}
+
+.display {
+    transform: translateX(0px);
+    opacity: 1;
+    transition: 0.5s;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+.background {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0.61);
+    filter: blur(10);
+    z-index: 0;
+    opacity: 0.70;
+    background: url("background.jpg");
+    background-size: cover;
+    background-position-x: 50%;
+}
+
+.view {
+    text-align: center;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    padding: 20px
+}
+
+* {
+    user-select: none;
+    font-family: 'Noto Sans TC', sans-serif;
+    font-weight: 300;
+}
+
+.command-bar {
+    display: flex;
+    align-items: center;
+    width: calc(100vw - 40px);
+    font-size: 16px;
+    box-shadow: 3px 3px 3px 2px gray;
+    background-color: white;
+    padding: 0 10px;
+}
+
+split {
+    border-left: gray 1px solid;
+    height: 30px;
+    margin: 0 10px;
+}
+
+#mode-icon {
+    color: gray
+}
+
+#command-input {
+    display: inline-block;
+    flex-grow: 1;
+    font-size: 16px;
+    padding: 10px 0;
+    outline: none;
+    border: none;
+}
+
+.category-bar {
+    display: inline-block;
+    margin: 30px 0;
+}
+
+.category-bar>span {
+    padding: 5px 30px;
+    cursor: pointer;
+    transition: 0.3s;
+    color: rgb(49, 49, 49);
+    background-color: white;
+    transition: 0.3s;
+}
+
+.category-bar>span.selected {
+    background-color: rgb(49, 49, 49);
+    color: white;
+}
+
+.category-bar>span:hover {
+    background-color: rgb(49, 49, 49);
+    color: white;
+}
+
+.list {
+    display: flex;
+    flex-direction: column;
+}
+
+.item {
+    height: 80px;
+    background-color: white;
+    box-shadow: 0px 0px 2px 0px gray;
+    margin: 5px 0;
+}

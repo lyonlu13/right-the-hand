@@ -1,0 +1,19 @@
+{
+    "name": "right-the-hand",
+    "version": "1.0.0",
+    "description": "Note Swiftly",
+    "main": "main.js",
+    "author": "Lyon",
+    "license": "MIT",
+    "scripts": {
+        "start": "electron . "
+    },
+    "dependencies": {
+        "material-icons": "^0.7.6",
+        "ws": "^8.2.0"
+    },
+    "devDependencies": {
+        "electron": "^13.2.1",
+        "electron-builder": "^22.11.7"
+    }
+}
